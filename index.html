@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecologic</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="/assets/icon.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/png">
+</head>
+
+<body>
+
+    <nav class="fixed top-0 w-full bg-white shadow-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/assets/icon.png" class="h-12" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold dark:text-white text-green-700">Ecologic</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="#"
+                        class="block py-2 px-3 text-green-700 rounded md:border-0 hover:text-green-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        aria-current="page">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre"
+                        class="block py-2 px-3 text-green-700 rounded md:border-0 hover:text-green-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre</a>
+                </li>
+                <li>
+                    <a href="#topicos"
+                        class="block py-2 px-3 text-green-700 rounded md:border-0 hover:text-green-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tópicos</a>
+                </li>
+                <li>
+                    <a href="#agradecimentos"
+                        class="block py-2 px-3 text-green-700 rounded md:border-0 hover:text-green-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Agradecimentos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <button id="scroll-to-top" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+    
+
+    <section class="bg-center bg-no-repeat bg-green-700">
+        <div class="ml-16 px-4 max-w-4xl text-left py-24 lg:py-56">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Nossas atitudes mudam o mundo!</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-0 lg:px-0">Descubra e adote boas práticas ambientais para um mundo mais sustentável e equilibrado</p>
+        </div><a id="sobre"></a>
+    </section>
+
+    
+    <br>
+    
+
+    <div>
+        <h1 class="mt-16 mr-16 ml-16 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">O que são atitudes consideradas<span class="text-green-700"> boas práticas ambientais?</span></h1>
+        <p class="text-justify mr-16 ml-16 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Referem-se a ações e comportamentos que visam a preservação, conservação e uso sustentável
+            dos recursos naturais, contribuindo para a promoção da saúde do meio ambiente. Estas práticas
+            são orientadas por princípios de responsabilidade, conscientização e respeito ao equilíbrio
+            ecossistêmico. Englobam desde atitudes simples no cotidiano até políticas e processos mais
+            amplos em organizações, visando minimizar impactos negativos no meio ambiente e promover
+            um desenvolvimento sustentável. Exemplos incluem a redução de resíduos, economia de energia, uso consciente da água, preservação da biodiversidade e a promoção de tecnologias limpas. Em resumo, boas práticas ambientais são ações que buscam garantir a coexistência harmônica entreas atividades humanas e o ecossistema. </p>
+    </div>  
+
+    <div>
+        <h1 class="mt-16 mr-16 ml-16 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">Por que esse tema é tão<span class="text-green-700"> importante?</span></h1>
+        <p class="text-justify mr-16 ml-16 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"><a id="topicos"></a>
+            As boas práticas ambientais desempenham um papel crucial na construção de um futuro sustentável. Ao adotarmos esses comportamentos, 
+            não apenas contribuímos para a preservação dos recursos naturais, mas também promovemos um estilo de vida saudável e equilibrado. Cada pequena ação, 
+            desde a separação adequada dos resíduos até a escolha de fontes de energia renovável, tem um impacto positivo no nosso planeta. Além disso, ao incorporarmos essas práticas em nosso cotidiano, estamos agindo como agentes de mudança, 
+            influenciando positivamente nossas comunidades e inspirando outros a seguir o mesmo caminho. Ao final do dia, as boas práticas ambientais não são apenas um conjunto de ações, mas sim um compromisso coletivo em preservar a beleza e a 
+            diversidade do nosso meio ambiente para as gerações futuras.
+        </p>
+    </div>  
+
+    <div>
+        <h1 class="mt-16 mr-16 ml-16 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">Como podemos adotar essas práticas no<span class="text-green-700"> dia a dia?</span></h1>
+        <p class="text-justify mr-16 ml-16 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            Descubra práticas simples para tornar seu dia a dia mais sustentável. 
+        </p>
+    </div>  
+    
+    <br>
+    
+    <div class="mr-16 ml-16 mb-10 flex items-center">
+
+        <a href="#conservacao-agua" class="flex items-center w-full p-4 rounded-lg border border-transparent hover:bg-green-100 hover:text-white transition duration-300 ease-in-out">
+            <img src="/assets/economia-agua.png" alt="Descrição da imagem" class="mr-4 h-16 w-16 rounded-full">
+            <div>
+                <h2 class="mt-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
+                    Conservação da<span class="text-green-700"> Água</span>
+                </h2>
+                <p class="text-justify text-sm font-normal text-gray-500 lg:text-base dark:text-gray-400 mt-3">
+                    Adote práticas para economizar água, como consertar vazamentos, usar tecnologias eficientes em termos de água e reduzir o tempo de banho.
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="mr-16 ml-16 mb-10 flex items-center">
+        <a href="#reducao-plastico" class="flex items-center w-full p-4 rounded-lg border border-transparent hover:bg-green-100 hover:text-white transition duration-300 ease-in-out">    
+            <img src="/assets/plastico.png" alt="Descrição da imagem" class="mr-4 h-16 w-16 rounded-full">
+            <div>
+                <h2 class="mt-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
+                    Redução do consumo de<span class="text-green-700"> Plástico</span>
+                </h2>
+                <p class="text-justify text-sm font-normal text-gray-500 lg:text-base dark:text-gray-400 mt-3">
+                    Minimize o uso de produtos plásticos descartáveis. Opte por alternativas reutilizáveis e apoie iniciativas que visam reduzir a poluição por plásticos.
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="mr-16 ml-16 mb-10 flex items-center">
+        <a href="#eficiencia-energetica" class="flex items-center w-full p-4 rounded-lg border border-transparent hover:bg-green-100 hover:text-white transition duration-300 ease-in-out">    
+            <img src="/assets/energia.png" alt="Descrição da imagem" class="mr-4 h-16 w-16 rounded-full">
+            <div>
+                <h2 class="mt-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
+                    Eficiência<span class="text-green-700"> Energética</span>
+                </h2>
+                <p class="text-justify text-sm font-normal text-gray-500 lg:text-base dark:text-gray-400 mt-3">
+                    Adote práticas que economizem energia, como desligar dispositivos eletrônicos quando não estiverem em uso, usar lâmpadas de baixo consumo e considerar fontes de energia renovável.
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="mr-16 ml-16 mb-10 flex items-center">
+        <a href="#mobilidade-sustentavel" class="flex items-center w-full p-4 rounded-lg border border-transparent hover:bg-green-100 hover:text-white transition duration-300 ease-in-out">            
+            <img src="/assets/transporte.png" alt="Descrição da imagem" class="mr-4 h-16 w-16 rounded-full">
+            <div>
+                <h2 class="mt-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
+                    Mobilidade<span class="text-green-700"> Sustentável</span>
+                </h2>
+                <p class="text-justify text-sm font-normal text-gray-500 lg:text-base dark:text-gray-400 mt-3">
+                    Sempre que possível, opte por meios de transporte mais sustentáveis, como caminhar, andar de bicicleta, usar transporte público ou veículos elétricos. Isso contribui para a redução da poluição do ar e das emissões de carbono.
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="mr-16 ml-16 mb-10 flex items-center">
+        <a href="#preservacao-biodiversidade" class="flex items-center w-full p-4 rounded-lg border border-transparent hover:bg-green-100 hover:text-white transition duration-300 ease-in-out">            
+            <img src="/assets/biodiversidade.png" alt="Descrição da imagem" class="mr-4 h-16 w-16 rounded-full">
+            <div>
+                <h2 class="mt-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
+                    Preservação da<span class="text-green-700"> Biodiversidade</span>
+                </h2>
+                <p class="text-justify text-sm font-normal text-gray-500 lg:text-base dark:text-gray-400 mt-3">
+                    Apoie a conservação de habitats naturais, evite o desmatamento e escolha alimentos provenientes de fontes sustentáveis que não contribuam para a degradação ambiental.
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="mr-16 ml-16 mb-10 flex items-center">
+        <a href="#reciclagem-reutilizacao" class="flex items-center w-full p-4 rounded-lg border border-transparent hover:bg-green-100 hover:text-white transition duration-300 ease-in-out">    
+            <img src="/assets/reciclagem.png" alt="Descrição da imagem" class="mr-4 h-16 w-16 rounded-full">
+            <div>
+                <h2 class="mt-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
+                    Reciclagem e<span class="text-green-700"> Reutilização</span>
+                </h2>
+                <p class="text-justify text-sm font-normal text-gray-500 lg:text-base dark:text-gray-400 mt-3">
+                    Recicle materiais sempre que possível e procure maneiras de reutilizar itens antes de descartá-los. Isso ajuda a reduzir o desperdício e o impacto ambiental.
+                </p>
+            </div>
+            <a id="conservacao-agua"></a>
+        </a>
+    </div>
+    
+
+<!-- AGUA -->
+
+<div class="bg-green-800 text-white py-8 sm:py-24 lg:py-16" id="agua-section">
+    <div class="container mx-auto">
+        
+        <h2 class="ml-5 text-4xl font-extrabold mb-8">Conservação da Água</h2>
+        <!-- Adicione mais elementos conforme necessário -->
+        <div class="ml-5 mr-5 sm:ml-16 sm:mr-16">
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                A água, um recurso vital que sustenta toda forma de vida em nosso planeta, é a essência que permeia nossas vidas diárias. Seu papel transcendental vai além de ser uma simples necessidade; a água é a base da existência e um elo fundamental entre todos os seres vivos.
+            </p>
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                Compreender a importância da água significa reconhecer que ela é indispensável para a sobrevivência de ecossistemas, comunidades e indivíduos. É a força motriz por trás da prosperidade agrícola, da geração de energia e do suporte à biodiversidade. Desde o delicado equilíbrio dos ecossistemas aquáticos até a satisfação básica de nossas necessidades diárias, a água é inestimável.
+            </p>
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                No entanto, este recurso valioso enfrenta desafios significativos. A escassez hídrica, a poluição e a degradação de fontes de água ameaçam seu equilíbrio e disponibilidade. É imperativo, agora mais do que nunca, que assumamos a responsabilidade coletiva de proteger e preservar a água para as gerações presentes e futuras.
+            </p>
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                A preservação da água não é apenas uma escolha sábia; é um compromisso vital. Ao adotarmos práticas conscientes de uso da água em nossas casas, empresas e comunidades, contribuímos diretamente para a saúde do nosso planeta. A conservação da água não é apenas um ato de responsabilidade, mas um ato de amor pela vida em todas as suas formas.
+            </p>
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                Abaixo, listamos algumas formas para a conservação de água:          
+            </p>
+            <a id="reducao-plastico"></a>
+            <ul class="list-disc ml-8 mb-4">
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Reduza o tempo do banho para economizar água.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Conserte vazamentos imediatamente, mesmo os pequenos.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Recolha água da chuva para uso em atividades como regar plantas.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Utilize tecnologias eficientes, como torneiras de baixo consumo e descargas econômicas.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Eduque sobre a importância da conservação da água em sua comunidade.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    
+    <!--PLASTICO-->
+    <div class="bg-white text-green-800 py-8 sm:py-24 lg:py-16" id="plastico-section">
+        <div class="container mx-auto">
+            <h2 class="ml-5 text-4xl font-extrabold mb-8">Redução no Consumo de Plástico</h2>
+            <!-- Adicione mais elementos conforme necessário -->
+            <div class="ml-5 mr-5 sm:ml-16 sm:mr-16">
+                <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                    A problemática do consumo excessivo de plástico tornou-se uma questão urgente que afeta diretamente nosso meio ambiente e a saúde do planeta.
+                </p>
+                <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                    Diante desse cenário, a redução no consumo de plástico emerge como uma medida crucial para promover práticas mais sustentáveis e preservar os ecossistemas terrestres e aquáticos.
+                </p>
+                <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                    O plástico, devido à sua durabilidade e resistência, tornou-se onipresente em nosso cotidiano. No entanto, a produção desenfreada e o descarte inadequado resultam em graves consequências para o meio ambiente.
+                </p>
+                <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                    Os resíduos plásticos poluem oceanos, prejudicam a vida marinha e contribuem para a formação de microplásticos, que têm efeitos prejudiciais em toda a cadeia alimentar.
+                </p>
+                <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                    Algumas práticas recomendadas para reduzir o consumo de plástico são:
+                </p>
+                <a id="eficiencia-energetica"></a>
+                <ul class="list-disc ml-8 mb-4">
+                    <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Recuse sacolas plásticas descartáveis ao fazer compras.</li>
+                    <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Opte por produtos com embalagens sustentáveis ou com menos plástico.</li>
+                    <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Carregue uma garrafa de água reutilizável em vez de comprar garrafas plásticas descartáveis.</li>
+                    <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Evite produtos de uso único, como talheres, pratos e copos plásticos.</li>
+                    <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Participe de iniciativas de limpeza de praias e áreas públicas para reduzir o plástico descartado.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+<!-- EFICIÊNCIA ENERGÉTICA -->
+<div class="bg-green-800 text-white py-8 sm:py-24 lg:py-16" id="energia-section">
+    <div class="container mx-auto">
+        <h2 class="ml-5 text-4xl font-extrabold mb-8">Eficiência Energética</h2>
+        <!-- Adicione mais elementos conforme necessário -->
+        <div class="ml-5 mr-5 sm:ml-16 sm:mr-16">
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                A eficiência energética é fundamental para reduzir o impacto ambiental e promover um uso mais sustentável dos recursos. Adotar práticas e tecnologias eficientes pode contribuir significativamente para a preservação do meio ambiente e a redução do consumo de energia.
+            </p>
+            <a id="mobilidade-sustentavel"></a>
+            <ul class="list-disc ml-8 mb-4">
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Troque lâmpadas incandescentes por LED, que consomem menos energia e têm maior durabilidade.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Desligue aparelhos eletrônicos e luzes quando não estiverem em uso.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Utilize eletrodomésticos com classificação de eficiência energética.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Invista em isolamento térmico para reduzir a necessidade de aquecimento e resfriamento.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Considere a instalação de painéis solares para gerar energia limpa e renovável.</li>
+            </ul>
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                Além disso, a conscientização sobre o consumo responsável de energia é essencial. Ao adotarmos práticas que visam a eficiência energética, contribuímos para a sustentabilidade do nosso planeta e para a construção de um futuro mais equilibrado.
+            </p>
+        </div>
+    </div>
+</div>
+
+ <!-- MOBILIDADE SUSTENTÁVEL -->
+<div class="bg-white text-green-800 py-8 sm:py-24 lg:py-16" id="mobilidade-section">
+    <div class="container mx-auto">
+        <h2 class="ml-5 text-4xl font-extrabold mb-8">Mobilidade Sustentável</h2>
+        <!-- Adicione mais elementos conforme necessário -->
+        <div class="ml-5 mr-5 sm:ml-16 sm:mr-16">
+            <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                A mobilidade sustentável é essencial para mitigar os impactos ambientais relacionados ao transporte. Adotar opções de locomoção mais amigáveis ao meio ambiente não apenas reduz a emissão de poluentes, mas também contribui para cidades mais saudáveis e qualidade de vida.
+            </p>
+            <a id="preservacao-biodiversidade"></a>
+            <ul class="list-disc ml-8 mb-4">
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Prefira meios de transporte público, como ônibus e trens, que emitem menos gases poluentes por passageiro.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Incentive o uso de bicicletas e patinetes elétricos para deslocamentos curtos.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Participe de programas de carona solidária para reduzir a quantidade de veículos nas estradas.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Opte por veículos elétricos ou híbridos, que emitem menos poluentes e consomem menos combustível fóssil.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Promova o planejamento urbano que incentive a mobilidade a pé e o uso de transportes não motorizados.</li>
+            </ul>
+            <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                Além de contribuir para a redução das emissões de carbono, a escolha por meios de transporte sustentáveis também pode gerar benefícios para a saúde e a qualidade do ar, criando comunidades mais vibrantes e saudáveis.
+            </p>
+        </div>
+    </div>
+</div>   
+    
+    
+<!-- PRESERVAÇÃO DA BIODIVERSIDADE -->
+<div class="bg-green-800 text-white py-8 sm:py-24 lg:py-16" id="biodiversidade-section">
+    <div class="container mx-auto">
+        <h2 class="ml-5 text-4xl font-extrabold mb-8">Preservação da Biodiversidade</h2>
+        <!-- Adicione mais elementos conforme necessário -->
+        <div class="ml-5 mr-5 sm:ml-16 sm:mr-16">
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                A biodiversidade é a variedade de vida na Terra e desempenha um papel crucial na sustentação da saúde dos ecossistemas. A preservação da biodiversidade é essencial para garantir a estabilidade ambiental e o bem-estar de todas as formas de vida.
+            </p>
+            <ul class="list-disc ml-8 mb-4">
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Apoie e participe de iniciativas de conservação de espécies ameaçadas de extinção.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Promova a restauração de habitats naturais, como reflorestamento e proteção de áreas selvagens.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Adote práticas agrícolas sustentáveis que minimizem o impacto nas comunidades biológicas locais.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Evite o comércio ilegal de espécies selvagens e seus produtos.</li>
+                <li class="text-lg font-normal text-white lg:text-xl dark:text-gray-400">Eduque sobre a importância da biodiversidade e seu papel na saúde dos ecossistemas.</li>
+            </ul>
+            <p class="text-justify text-lg font-normal text-white lg:text-xl dark:text-gray-400 mb-4">
+                A conservação da biodiversidade não é apenas uma responsabilidade ambiental, mas também é vital para a nossa própria sobrevivência. Ao protegermos a diversidade de vida em nosso planeta, contribuímos para um ambiente saudável e sustentável para as gerações presentes e futuras.
+            </p>
+        </div>
+    </div>
+</div>
+    
+
+            
+<!-- RECICLAGEM E REUTILIZAÇÃO -->
+<div class="bg-white text-green-800 py-8 sm:py-24 lg:py-16" id="reciclagem-section">
+    <div class="container mx-auto">
+        <h2 class="ml-5 text-4xl font-extrabold mb-8">Reciclagem e Reutilização</h2>
+        <!-- Adicione mais elementos conforme necessário -->
+        <div class="ml-5 mr-5 sm:ml-16 sm:mr-16">
+            <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                A reciclagem e reutilização desempenham um papel crucial na redução do impacto ambiental causado pelos resíduos sólidos. Ao adotarmos práticas de reciclagem e promovermos a reutilização de materiais, contribuímos para a conservação de recursos naturais e a minimização da poluição.
+            </p>
+            <a id="reciclagem-reutilizacao"></a>
+            <ul class="list-disc ml-8 mb-4">
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Separe corretamente os materiais recicláveis em sua casa ou local de trabalho.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Participe de programas locais de coleta seletiva e reciclagem.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Reduza o consumo de produtos descartáveis, optando por alternativas reutilizáveis.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Promova a doação de itens ainda em bom estado para evitar descartes desnecessários.</li>
+                <li class="text-lg font-normal text-black lg:text-xl dark:text-gray-400">Conscientize sobre a importância da reciclagem na comunidade local.</li>
+            </ul>
+            <p class="text-justify text-lg font-normal text-black lg:text-xl dark:text-gray-400 mb-4">
+                Ao incorporarmos a reciclagem e reutilização em nossas práticas diárias, contribuímos para a construção de um futuro mais sustentável, preservando os recursos do nosso planeta.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h1 class="mt-16 mr-16 ml-16 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+        Obrigado por Fazer a<span class="text-green-700"> Diferença!</span>
+    </h1>
+    <p class="text-justify mt-4 mr-16 ml-16 mb-3 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+        Agradecemos por dedicar seu tempo à leitura. Ao compreender e adotar boas práticas ambientais, você
+        contribui para um futuro mais sustentável. Continue explorando e estudando sobre responsabilidade
+        socioambiental para fazer a diferença em nosso planeta.
+    </p>
+    <p class="text-justify mt-4 mr-16 ml-16 mb-16 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+        Trabalho para disciplina de Responsabilidade Socioambiental, realizado por discentes do 4º semestre do curso de Sistemas de Informação.
+    </p>
+    <h1 class="mt-16 mr-16 ml-16 mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-xl lg:text-2xl dark:text-white">
+        <span class="text-green-700"> Alunos</span>
+    </h1>
+    <div class="ml-16">
+        <div class="flex items-center gap-4 mb-5">
+            <img class="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+            <div class="font-medium dark:text-white">
+                <div>Dany Luan Rodrigues Tavares</div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 mb-5">
+            <img class="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+            <div class="font-medium dark:text-white">
+                <div>Luiz Gustavo Gonçalves brito</div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 mb-5">
+            <img class="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+            <div class="font-medium dark:text-white">
+                <div>Mauricio Nogueira Albuquerque Junior</div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 mb-5">
+            <img class="w-10 h-10 rounded-full" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+            <div class="font-medium dark:text-white">
+                <div>Thalis Ferreira da Cruz</div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+<a id="agradecimentos"></a>
+    <footer class="mt-16 bg-green-800 rounded-lg shadow m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-white sm:text-center dark:text-gray-400">Sistemas de Informação - 4º Semestre
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
+                <li>
+                    <span href="#" class="hover:no-underline me-4 md:me-6">Responsabilidade Socioambiental</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mostrar ou ocultar o botão ao rolar
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var scrollToTopButton = document.getElementById("scroll-to-top");
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = "block";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        }
+
+        // Função para rolar suavemente para o topo
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Para navegadores Safari
+            document.documentElement.scrollTop = 0; // Para outros navegadores
+        }
+    </script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+</html>
